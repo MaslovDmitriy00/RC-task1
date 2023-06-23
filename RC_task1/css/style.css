@@ -1,0 +1,279 @@
+/* TT Commons - regular */
+@font-face {
+    font-family: 'TT Commons ';
+    src: local('TT Commons  Light'), local('TT-Commons--Light'),
+    url('../fonts/TTCommons-Light.woff2') format('woff2'),
+    url('../fonts/TTCommons-Light.woff') format('woff'),
+    url('../fonts/TTCommons-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Redcollar';
+    src:
+    url('../fonts/Redcollar.woff2') format('woff2'),
+    url('../fonts/Redcollar.woff') format('woff'),
+    url('../fonts/Redcollar.ttf') format('truetype');
+  }
+
+body{
+    font-family: 'TT Commons ';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFF;
+    letter-spacing: -0.18px;
+    background-color: #000;
+}
+
+.wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px;
+}
+
+.header-logo{
+    float: right;
+    margin-top: -12px;
+}
+
+.all-info{
+    display: flex;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    min-width: 322px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+}
+
+.user-photo{
+    margin-bottom: -39px;
+}
+
+.user-photo-image{
+    width: 322px;
+    height: 355px;
+    flex-shrink: 0;
+}
+
+.user-photo-glasses{
+    position:absolute;
+    margin-top: 17px;
+    margin-left: 70px;
+    min-width: 139px;
+}
+
+.user-name{
+    font-size: 24px;
+    font-family: Redcollar;
+    line-height: 28px;
+    letter-spacing: -0.48px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info-card-top-image{
+    width: 60px;
+    height: 19px;
+    flex-shrink: 0;
+}
+
+.contact-info-card{
+    min-height: 454px;
+    max-width: 322px;
+    display: flex;
+    padding: 40px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #F51B1B;
+}
+
+.general-user-info{
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.contacts-item{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.contacts-item:last-child{
+    margin-bottom: 0px;
+}
+
+.contacts-item-icon{
+    margin-right: 16px;
+}
+
+.profession-info{
+    margin: 20px 32px 32px 32px;
+    max-width: 690px;
+}
+
+.introduction{
+    margin-bottom: 32px;
+}
+
+.career-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.career-info_block{
+    border:1px solid #FFF;
+    width: 1006px;
+    height: 656px;
+    flex-shrink: 0;
+    margin-top: -20px;
+    padding: 48px 48px 0px 28px;
+}
+
+.career-info-top_arrow{
+    width: 60px;
+    height: 20px;
+    margin-left: 56px;
+    z-index: 1;
+}
+
+.education{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.edu-text{
+    width:124px;
+    margin-right: 72px;
+}
+
+h2{
+    font-size: 16px;
+    font-family: Redcollar;
+    line-height: 100%;
+}
+
+.edu-content-add-info{
+    opacity: 0.4000000059604645;
+}
+
+hr{
+    opacity: 0.4000000059604645;
+    border-top: 1px solid #ccc;
+}
+
+.skills{
+    display: flex;
+    margin-top: 20px
+}
+
+.skills-text{
+    width:124px;
+    margin-right: 72px;
+}
+
+.skills-content{
+    display: flex;    
+}
+
+.skills-content p{
+    margin-right: 32px;
+}
+
+@media (max-width: 640px) {
+    .wrap{
+        max-width: 360px;
+        padding: 20px;
+    }
+    .header-logo{
+        float:none;
+        height: 22px;
+        margin-bottom: 48px;
+    }
+    .all-info{
+        display: block;
+    }
+    .personal-info{
+        width: 320px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.36px;
+    }
+
+    .user-photo-image{
+        height: 353px;
+        width: 320px;
+    }
+    .contact-info-card{
+        padding: 24px 16px 40px;
+        min-height: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .general-user-info{
+        margin-bottom: 32px;
+    }
+
+    .profession-info{
+        margin: 40px 0px 0px;
+        max-width: 320px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.16px;
+    }
+
+    .introduction{
+        margin-bottom: 24px;
+    }
+
+    .career-info_block{
+        border:1px solid #FFF;
+        max-width: 318px;
+        min-height: 566px;
+        flex-shrink: 0;
+        margin-top: -20px;
+        padding: 40px 15px 15px 30px;
+    }
+
+    .career-info-top_arrow{
+        margin: auto;
+    }
+
+    .education{
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .edu-text{
+        width:auto;
+        margin-right: 0px;
+        margin-bottom: 16px;  
+    }
+
+    .skills{
+        margin-top: 24px;
+        display: block;
+    }
+    
+    .skills-text{
+        width:auto;
+        margin-right: 0px;
+        margin-bottom: 16px;  
+    }
+}
